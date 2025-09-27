@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="3.0" xmlns="https://jakarta.ee/xml/ns/jaxb">
+  <!--
+
+Este archivo ha sido generado por Eclipse Implementation of JAXB v3.0.0 
+Visite https://eclipse-ee4j.github.io/jaxb-ri 
+Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
+Generado el: 2025.09.26 a las 11:39:54 PM CST 
+
+  -->
+  <bindings scd="x-schema::tns" xmlns:tns="http://www.bankaya.com/pokemon-soap-api">
+    <schemaBindings map="false">
+      <package name="com.bankaya.excercise.pokemonsoapapi.domain.data"/>
+    </schemaBindings>
+    <bindings scd="tns:getPokemonRequest">
+      <class ref="com.bankaya.excercise.pokemonsoapapi.domain.data.GetPokemonRequest"/>
+    </bindings>
+    <bindings scd="tns:getPokemonResponse">
+      <class ref="com.bankaya.excercise.pokemonsoapapi.domain.data.GetPokemonResponse"/>
+    </bindings>
+    <bindings scd="~tns:pokemon">
+      <class ref="com.bankaya.excercise.pokemonsoapapi.domain.data.Pokemon"/>
+    </bindings>
+    <bindings scd="~tns:abilities">
+      <class ref="com.bankaya.excercise.pokemonsoapapi.domain.data.Abilities"/>
+    </bindings>
+    <bindings scd="~tns:abilityType">
+      <class ref="com.bankaya.excercise.pokemonsoapapi.domain.data.AbilityType"/>
+    </bindings>
+    <bindings scd="~tns:abilityDetailsType">
+      <class ref="com.bankaya.excercise.pokemonsoapapi.domain.data.AbilityDetailsType"/>
+    </bindings>
+    <bindings scd="~tns:heldItems">
+      <class ref="com.bankaya.excercise.pokemonsoapapi.domain.data.HeldItems"/>
+    </bindings>
+    <bindings scd="~tns:heldItemType">
+      <class ref="com.bankaya.excercise.pokemonsoapapi.domain.data.HeldItemType"/>
+    </bindings>
+    <bindings scd="~tns:itemType">
+      <class ref="com.bankaya.excercise.pokemonsoapapi.domain.data.ItemType"/>
+    </bindings>
+    <bindings scd="~tns:versionDetailsListType">
+      <class ref="com.bankaya.excercise.pokemonsoapapi.domain.data.VersionDetailsListType"/>
+    </bindings>
+    <bindings scd="~tns:versionDetailType">
+      <class ref="com.bankaya.excercise.pokemonsoapapi.domain.data.VersionDetailType"/>
+    </bindings>
+    <bindings scd="~tns:versionType">
+      <class ref="com.bankaya.excercise.pokemonsoapapi.domain.data.VersionType"/>
+    </bindings>
+  </bindings>
+</bindings>
+

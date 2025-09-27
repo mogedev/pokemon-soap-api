@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "724ef1ab-3526-4028-9be0-74f7a8f44d99",
+		"name": "Pokemons Soap Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5967646"
+	},
+	"item": [
+		{
+			"name": "Get Pokemons by Name",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"type": "text"
+					},
+					{
+						"key": "SOAPAction",
+						"value": "\"#POST\"",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\"\n\t\t\t\t  xmlns:gs=\"http://www.bankaya.com/pokemon-soap-api\">\n   <soapenv:Header/>\n   <soapenv:Body>\n      <gs:getPokemonRequest>\n         <gs:pokemonName>raticate</gs:pokemonName>\n      </gs:getPokemonRequest>\n   </soapenv:Body>\n</soapenv:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pokemons",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pokemons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Pokemons by Name - Not Found",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"type": "text"
+					},
+					{
+						"key": "SOAPAction",
+						"value": "\"#POST\"",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\"\n\t\t\t\t  xmlns:gs=\"http://www.bankaya.com/pokemon-soap-api\">\n   <soapenv:Header/>\n   <soapenv:Body>\n      <gs:getPokemonRequest>\n         <gs:pokemonName>raticat</gs:pokemonName>\n      </gs:getPokemonRequest>\n   </soapenv:Body>\n</soapenv:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pokemons",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pokemons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "WSDL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/pokemons/pokemons.wsdl",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pokemons",
+						"pokemons.wsdl"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
