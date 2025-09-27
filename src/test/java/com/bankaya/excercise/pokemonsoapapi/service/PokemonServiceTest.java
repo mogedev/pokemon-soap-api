@@ -4,7 +4,6 @@ import com.bankaya.excercise.pokemonsoapapi.domain.data.GetPokemonRequest;
 import com.bankaya.excercise.pokemonsoapapi.domain.data.GetPokemonResponse;
 import com.bankaya.excercise.pokemonsoapapi.domain.data.Pokemon;
 import com.bankaya.excercise.pokemonsoapapi.ports.spi.PokeApiSpi;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;

@@ -21,8 +21,11 @@ import java.util.List;
 @Configuration
 public class WebServiceConfig implements WsConfigurer {
 
-    @Autowired
-    private ApiInterceptorConfig interceptor;
+    private final ApiInterceptorConfig interceptor;
+
+    public WebServiceConfig(ApiInterceptorConfig interceptor) {
+        this.interceptor = interceptor;
+    }
 
     @Bean
     public ServletRegistrationBean<MessageDispatcherServlet> messageDispatcherServlet(ApplicationContext applicationContext) {

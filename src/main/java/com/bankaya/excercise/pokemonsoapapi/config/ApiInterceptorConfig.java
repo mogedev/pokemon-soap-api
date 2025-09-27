@@ -96,7 +96,7 @@ public class ApiInterceptorConfig implements EndpointInterceptor {
             StreamResult result = new StreamResult(writer);
             TransformerFactory.newInstance().newTransformer().transform(message.getPayloadSource(), result);
             return writer.toString()
-                    .replaceAll(">[\\s\\r\\n]+<", "><")
+                    .replaceAll(">[\\s\\n]+<", "><")
                     .replaceAll("[\\r\\n]+", "")
                     .trim();
         } catch (Exception e) {

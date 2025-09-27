@@ -1,7 +1,6 @@
 package com.bankaya.excercise.pokemonsoapapi.component;
 
 import com.bankaya.excercise.pokemonsoapapi.domain.exception.PokemonNotFoundException;
-import feign.Request;
 import feign.Response;
 import feign.RetryableException;
 import feign.codec.ErrorDecoder;

@@ -11,6 +11,7 @@ public class Binnacle {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = BINNACLE_ID_COLUMN, nullable = false)
     private Integer id;
     @Column(name = ORIGIN_IP_COLUMN, nullable = false)
     private String originIp;
